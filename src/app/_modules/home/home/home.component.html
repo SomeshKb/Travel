@@ -1,1 +1,26 @@
-<p>home works!</p>
+<div class="content">
+
+    <mat-card class="profile">
+      <mat-card-content>
+      <h1 class="name">Be Traveller</h1>
+      <h3 appAnimationTyping class="description">Not Tourist</h3>
+      </mat-card-content>
+    </mat-card>
+  
+      <div fxLayout="row wrap" fxLayoutGap="16px grid">
+        <div [fxFlex]="20 + '%'" fxFlex.xs="100%" fxFlex.sm="33%">
+          <mat-card class="mat-elevation-z4 card" [routerLink]="['/project/dog-breed-classifier']" routerLinkActive="router-link-active" >
+            <mat-card-header class="blog-header">
+              <mat-card-title class="blog-title">Rishikesh</mat-card-title>
+            </mat-card-header>
+            <img mat-card-image src='https://www.oyorooms.com/travel-guide/wp-content/uploads/2019/05/25-driving-getaways-from-Delhi-this-summer-Image-Rishikesh.jpg'>
+            <mat-card-content>
+              <p>
+                {{"Rishikesh is a city in India’s northern state of Uttarakhand, in the Himalayan foothills beside the Ganges River. The river is considered holy, and the city is renowned as a center for studying yoga and meditation. Temples and ashrams (centers for spiritual studies) line the eastern bank around Swarg Ashram, a traffic-free, alcohol-free and vegetarian enclave upstream from Rishikesh town." | slice: 0: 100 }}
+              </p>
+            </mat-card-content>
+  
+          </mat-card>
+        </div>
+      </div>
+    </div>

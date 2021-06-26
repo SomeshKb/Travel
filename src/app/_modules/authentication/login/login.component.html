@@ -1,1 +1,46 @@
-<p>login works!</p>
+
+
+
+
+
+
+
+<mat-card class="login">
+  <h2  [ngClass]="isSignin? 'active' : 'nonactive'" (click)='switchScreen(true)'> Sign In </h2>
+
+  <h2 [ngClass]="!isSignin? 'active' : 'nonactive'"  (click)='switchScreen(false)' > Sign Up </h2>
+
+  <div *ngIf="isSignin">
+    <input type="text" class="text" name="username">
+    <span>username</span>
+    <br>
+    <br>
+    <input type="password" class="text" name="password">
+    <span>password</span>
+    <br>
+    <button class="signin" (click)='login()'>
+      Sign In
+    </button>
+    <hr>
+
+    <a href="#">Forgot Password?</a>
+  </div>
+
+
+  <div *ngIf="!isSignin">
+    <input type="text" class="text" name="username">
+    <span>username</span>
+    <br>
+    <br>
+    <input type="password" class="text" name="password">
+    <span>password</span>
+    <br>
+    <input type="checkbox" id="checkbox-1-1" class="custom-checkbox" />
+    <button class="signin">
+      Sign Up
+    </button>
+    <hr>
+
+  </div>
+
+</mat-card>

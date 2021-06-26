@@ -9,6 +9,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
   ],
 
   exports: [
+    FlexLayoutModule
   ],
   bootstrap: [
   ]
